@@ -1,0 +1,37 @@
+Invincible Tools
+================
+
+A Bukkit Plugin that allows invincible tools as configured by the server admins.
+
+The config file is located in 'plugins\InvincibleTools' and is called 'config.yml'.
+If the config file does not exist when the plugin is loaded, then one will be created
+with unbreakable stone tools as the default. The only item in the config file is
+invincible: followed by any of the following options separated by commas
+
+Options are:
+  [material_type]		- Every one of the following tools made out of [material]
+  						  including the sword
+
+  [material_type]_tools	- Every one of the following tools made out of [material]
+						  except the sword
+
+  [material_type]_hoe
+  [material_type]_spade
+  [material_type]_axe
+  [material_type]_pickaxe
+  [material_type]_sword
+  
+
+[material_type] Can be any of the following:
+  wood
+  stone
+  iron
+  gold
+  diamond
+
+Example:
+invincible: stone_pickaxe, diamond, wood_sword, iron_tools
+
+That example would make stone pickaxes invincible, along with all diamond tools
+including the diamond sword, along with wood swords, and all iron tools excluding
+the iron sword.
